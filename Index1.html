@@ -1,0 +1,260 @@
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"> 
+		<!-- font awesome -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<!-- Boost -->
+
+	</head>
+
+
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-2 border" style="text-align: center;">
+					<!-- <i class="fas fa-user-circle fa-3x"></i> -->
+					<img src="img\persona.png" class="rounded-circle img" width="50px">
+
+				</div>
+				<div class="col-7 bg-success p-2" style="text-align: center; color: white ; font:'verdana' ">
+
+					Mi Tienda
+					
+				</div>
+				<div class="col-3 border " style="text-align: center; ">
+					<i class="fas fa-cart-plus fa-2x"> carrito </i> 
+				</div>
+
+			</div>
+
+			<div class="row" style="background: white">
+				<!-- col 1 -->
+				<div class="col-6 border">
+					<div class="form-inline">
+						
+						<!-- <input class="form-check-input" type="checkbox" value="id="defaultCheck1"> -->
+
+						<!-- <img src="img\pan.jpg" class="img-responsive img-thumbnail" width="50 px"> -->
+						<img src="img\pan.jpg" class="img-fluid" alt="Responsive image"  width =" 80 px ">
+
+						<div class="form-group d-block">
+							<label for=""> Pan </label>
+							<input class="form-control" type="text" id = "cantPan">
+							<input type="hidden" value="500" id="valorPan">
+
+						</div>
+				<!-- 		<span class="btn btn-info mt-4 ml-3">
+							$500
+						</span>
+				 -->		
+					</div>
+
+					<div class="form-inline">
+					<img src="img\leche.png" class="img-fluid" alt="Responsive image"  width =" 80 px ">
+						<!-- <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"> -->
+						<div class="form-group d-block">
+							<label for=""> Leche </label>
+							<!-- <input class="form-control" type="text"> -->
+							<input class="form-control" type="text" id= "cantLeche">
+							<input type="hidden" value="2000" id="valorLeche">
+						</div>
+						<!-- <span class="btn btn-info mt-4 ml-3">
+							$2000
+
+						</span> 
+						 -->
+					</div>
+
+					<div class="form-inline">
+						
+						<!-- <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"> -->
+						<img src="img\huevos.jpg" class="img-fluid" alt="Responsive image"  width =" 80 px ">
+						<div class="form-group d-block">
+							<label for=""> Huevos </label>
+							<!-- <input class="form-control" type="text"> -->
+							<input class="form-control" type="text" id= "cantHuevos">
+							<input type="hidden" value="300" id="valorHuevos">
+						</div>
+						<!-- <span class="btn btn-info mt-4 ml-3">
+							$300
+
+						</span> -->
+						
+					</div>
+
+				</div>
+				<!-- col 2 -->
+				<div class="col-6 border">
+					<div class="form-inline">
+						
+						<!-- <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"> -->
+						<img src="img\jabon.jpg" class="img-fluid" alt="Responsive image"  width =" 80 px ">
+						<div class="form-group d-block">
+							<label for=""> Jabon </label>
+							<input class="form-control" type="text" id= "cantJabon">
+							<input type="hidden" value="1500" id="valorJabon">
+
+							<!-- <input class="form-control" type="text"> -->
+						</div>
+						<!-- <span class="btn btn-info mt-4 ml-3">
+							$1500
+
+						</span>
+						 -->
+					</div>
+
+					<div class="form-inline">
+						
+						<!-- <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"> -->
+						<img src="img\shampoo1.jpg" class="img-fluid" alt="Responsive image"  width =" 80 px ">
+						<div class="form-group d-block">
+							<label for=""> Shampoo </label>
+							<input class="form-control" type="text" id="cantShampoo">
+							<input type="hidden" value="300" id="valorShampoo">
+							<!-- <input class="form-control" type="text"> -->
+						</div>
+						<!-- <span class="btn btn-info mt-4 ml-3">
+							$2500
+
+						</span></span>
+						 -->
+					</div>
+
+					<div class="form-inline">
+						
+						<!-- <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"> -->
+						<img src="img\crema.jpg" class="img-fluid" alt="Responsive image"  width =" 80 px ">
+						<div class="form-group d-block">
+							<label for=""> Crema dental </label>
+							<input class="form-control" type="text" id = "cantCrema">
+							<input type="hidden" value="500" id="valorCrema">
+						</div>
+
+						<!-- <span class="btn btn-info mt-4 ml-3">
+							$2000
+						</span> -->
+					</div>
+				</div>
+			</div>
+
+
+			<div class="row" style="padding: 20px ">
+
+				<!-- col 3 -->
+				<div class="col-6 ">
+					<form>
+						<div class="form-group row">
+							<label for="subtotal" class="col-sm-2 col-form-label">Subtotal </label>
+							<div class="col-sm-10">
+								<input  type="number" class="form-control" id="subtotal" placeholder="Subtotal">
+								<input  type="hidden" value=0.16 id="valorIva">
+							</div>
+						</div>
+						
+						
+							<div class="form-group row">
+								<label for="inputIva1" class="col-sm-2 col-form-label">IVA </label>
+								<div class="col-sm-10">
+									<input type="number" class="form-control" id="inputIva1" placeholder="IVA">
+								</div>
+							</div>
+
+						</div>
+
+						<!-- col 4 -->
+						<div class="col-6">
+							<form>
+								<div class="form-group row">
+									<label for="subtotal1" class="col-sm-2 col-form-label">Subtotal </label>
+									<div class="col-sm-10">
+										<input type="number" class="form-control" id="subtotal1" placeholder="Subtotal1">
+										<input  type="hidden" value=0.16 id="valorIva1">
+
+									</div>
+								</div>
+
+								<form>
+									<div class="form-group row">
+										<label for="inputIva2" class="col-sm-2 col-form-label">IVA1 </label>
+										<div class="col-sm-10">
+											<input type="number" class="form-control" id="inputIva2" placeholder="IVA1">
+										</div>
+									</div>
+
+
+								</div>
+
+
+
+							</div>
+
+
+
+							<div class="row border " style="padding: 20px "
+							<!--col 6 -->
+
+							<div class="col-6 text-center justify-content-ceneter">
+								<label> FACTURA </label>
+								<div class =" w-100"> </div>
+								<button class="btn btn-primary" id='btncalc' type="button"> Calcular</button>
+
+							</div>
+							<!-- col 6 -->
+							<div class="col-6 border">
+
+								<form>
+									<div class="form-group row">
+										<label for="subtotal2" class="col-sm-2 col-form-label">Subtotal </label>
+										<div class="col-sm-10">
+											<input type="number" class="form-control" id="subtotal2" placeholder="Subtotal2">
+										</div>
+									</div>
+									<div class="form-group row">
+										<label for="inputIva3" class="col-sm-2 col-form-label">IVA </label>
+										<div class="col-sm-10">
+											<input type="number" class="form-control" id="inputIva3" placeholder="IVA">
+										</div>
+									</div>
+									<div class="form-group row">
+										<label for="inputTot" class="col-sm-2 col-form-label">TOTAL </label>
+										<div class="col-sm-10">
+											<input type="number" class="form-control" id="inputTot" placeholder="TOTAL1">
+										</div>
+									</div>
+
+								</form>
+							</div>
+
+
+
+
+
+
+
+
+
+						</div>
+
+
+
+
+
+
+						<div class="container ">
+
+
+							<footer style=" text-align: center;"> 
+								@ mintienda.com
+							</footer>
+						</div>
+
+						<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+						<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+						<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+						<script type="text/javascript" src="calculos.js"> </script>
+					</body>
+					</html>
